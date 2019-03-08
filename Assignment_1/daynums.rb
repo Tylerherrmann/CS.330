@@ -4,8 +4,5 @@ if ARGV.length != 1
 	exit
 end
 
-File.read(ARGV[0]).scan(/[^\d]31[^\d]|[^\d]30[^\d]|[^\d]2[0-9][^\d]|[^\d]1[0-9][^\d]|[^\d]0?[0-9][^\d]/) { |line| puts line }
-
-exit
-
-
+# Read our file, pull out the numbers matching the regex, print it to stdout.
+File.read(ARGV[0]).gsub!(/\D(3[0-1]|[1-2][0-9]|0?[1-9])\D/) {puts $1}

@@ -4,12 +4,10 @@ if ARGV.length != 1
 	exit(0)
 end
 
-# Extract the filename, open and read the file
-text = File.read(ARGV[0])
-
-# Eliminate any extra spaces, replace them with single spaces, store the result in a variable.
-contents = text.gsub(/\s\s+/,' ')
-
-puts contents
-
-exit
+File.readlines(ARGV[0]).each do |line|
+	if line =~ /\s\s+/ 
+		puts line.gsub(/\s\s+/,' ')
+	else
+		puts line
+	end
+end

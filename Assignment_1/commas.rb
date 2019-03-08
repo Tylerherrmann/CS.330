@@ -6,5 +6,3 @@ end
 
 # Print out the formatted version of the number we are passed in.
 puts ARGV[0].reverse.scan(/\d{3}|.+/).join(",").reverse
-
-exit

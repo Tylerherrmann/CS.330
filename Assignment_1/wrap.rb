@@ -6,5 +6,8 @@ end
 
 # Take in the passed breakpoint value, convert that to the regex necessary for later parsing.
 numDigits = "." * (((ARGV[1]).to_i)-1)
-# Output our new content with the new formatting in place.
-puts File.read(ARGV[0]).gsub(/(?<=#{numDigits})\s/,"\n")
+
+# Format our text using Regex
+output = File.read(ARGV[0]).gsub(/(?<=#{numDigits})\s/,"\n")
+# Strip extra blank lines that get added as part of earlier formatting
+puts output.gsub(/\n+|\r+/, "\n").squeeze("\n").strip

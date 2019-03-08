@@ -12,6 +12,5 @@ File.readlines(ARGV[1]).each do |line|
 	if line =~ /#{regexStatement}/ 
 		puts line
 	end
+	
 end
-
-exit(1)

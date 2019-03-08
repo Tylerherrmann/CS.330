@@ -7,25 +7,12 @@ end
 # Extract the filename, open and read the file
 text = File.read(ARGV[0])
 
-contents = text.gsub(/\s\s+/,' ')
+# Convert all of our units
+text.gsub!(/(\d+\.?(\d*))\s(pounds|pound|lbs)/) {"%.#{$2.length}f kg" % ($1.to_i * 0.453592)}
+text.gsub!(/(\d+\.?(\d*))\s(yards|yard|yd)/) {"%.#{$2.length}f m" % ($1.to_i * 0.9144)}
+text.gsub!(/(\d+\.?(\d*))\s(miles|mile)/) {"%.#{$2.length}f km" % ($1.to_i * 1.60934)}
+text.gsub!(/(\d+\.?(\d*))\s(mph)/) {"%.#{$2.length}f kph" % ($1.to_i * 1.60934)}
+text.gsub!(/(\d+\.?(\d*))\s(inches|inch|in)/) {"%.#{$2.length}f cm" % ($1.to_i * 2.54)}
 
-# This will pull out yard measurements using regex and convert to m
-contents = contents.gsub(/\d+\.\d+(?= yard)|\d+\.\d+(?= yards)|\d+\.\d+(?= yd)|\d+(?= yard)|\d+(?= yards)|\d+(?= yd)/) { |num| (num.to_f * 0.9144) }
-# This will pull out inches measurements using regex and convert to cm
-contents = contents.gsub(/\d+\.\d+(?= inch)|\d+\.\d+(?= inches)|\d+\.\d+(?= in)|\d+(?= inch)|\d+(?= inches)|\d+(?= in)/) { |num| (num.to_f * 2.54) }
-# This will pull out pounds measurements using regex and convert to kg
-contents = contents.gsub(/\d+\.\d+(?= pound)|\d+\.\d+(?= pounds)|\d+\.\d+(?= lb)|\d+(?= pound)|\d+(?= pounds)|\d+(?= lb)/) { |num| (num.to_f * 0.453592) }
-# This will pull out miles measurements using regex and convert to km
-contents = contents.gsub(/\d+\.\d+(?= miles)|\d+\.\d+(?= mile)|\d+\.\d+(?= mph)|\d+(?= miles)|\d+(?= mile)|\d+(?= mph)/) { |num| (num.to_f * 1.60934) }
-
-# Now converting all the text for the measurements over
-contents = contents.gsub(/inch|inches|in/,"cm")
-contents = contents.gsub(/mile|miles/,"km")
-contents = contents.gsub(/mph/,"kph")
-contents = contents.gsub(/pound|pounds|lbs/,"kg")
-contents = contents.gsub(/yard|yards|yd/,"m")
-
-# Printing out new measurements
-puts contents
-
-exit
+# Output to stdout
+puts text
