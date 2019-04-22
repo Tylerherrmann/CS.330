@@ -148,18 +148,12 @@
 		
 		(cond
 		
-			; Check if our pixel list is empty
 			((null? li1) '())
-			
-			; Otherwise check if the current pixel we are recurssing on is not part of our "answer" list
+
 			((not (notMember? li2 (car li1))) 
-				; If we have found a pixel that isn't part of our "answer" yet this means we have found the start of a new component
-				; From here we will pass a couple empty lists, our image, and our current pixel on to find the rest of this new component
-				; We then cons the resulting component out and to our "answer" list
 				(cons (findConnected '() li3 (car li1) '()) (connectedComponents (cdr li1) (cons (findConnected '() li3 (car li1) '()) li2) li3))
 			)
-			
-			; If we find a pixel that's already part of one of our components, keep recurssing 
+
 			((notMember? li2 (car li1))
 				(connectedComponents (cdr li1) li2 li3)
 			)
@@ -167,6 +161,23 @@
 		)
 
 	)
+)
+
+(define connectedComponents
+  (lambda (li1 li2 li3) 
+    (cond
+      ((null? li1) '())  
+      (not (notMember? li2 (car li1))
+        (cons (findConnected '() li3 (car li1) '()) (connectedComponents (cdr li1) (cons (findConnected '() li3 (car li1) '()) li2) li3)))
+		
+		; If we find a pixel that's already part of one of our components, keep recurssing 
+		((notMember? li2 (car li1))
+			(write ("I hate scheme"))
+			(connectedComponents (cdr li1) li2 li3)
+		)
+      
+    )
+  )
 )
 
 ; Call "Main" using our image and an empty list

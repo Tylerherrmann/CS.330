@@ -1,0 +1,190 @@
+Abbotsford,2310,2
+Adams,1967,1
+Algoma,3167,2
+Alma,781,0
+Altoona,6706,0
+Amery,2902,2
+Antigo,8234,3
+Appleton,72623,1
+Arcadia,2925,1
+Ashland,8216,2
+Augusta,1550,2
+Baraboo,12048,2
+Barron,3423,3
+Bayfield,487,0
+Beaver Dam,16243,0
+Beloit,36966,0
+Berlin,5524,0
+Black River Falls,3622,2
+Blair,1366,2
+Bloomer,3539,0
+Boscobel,3231,1
+Brillion,3148,1
+Brodhead,3293,1
+Brookfield,37920,3
+Buffalo City,1023,1
+Burlington,10464,0
+Cedarburg,11412,0
+Chetek,2221,2
+Chilton,3933,0
+Chippewa Falls,13679,0
+Clintonville,4559,0
+Colby,1852,0
+Columbus,4991,1
+Cornell,1467,1
+Crandon,1920,1
+Cuba City,2086,2
+Cudahy,18267,2
+Cumberland,2170,2
+Darlington,2451,2
+Delafield,7085,2
+Delavan,8463,3
+De Pere,23800,1
+Dodgeville,4698,1
+Durand,1931,1
+Eagle River,1398,1
+Eau Claire,65883,1
+Edgerton,5461,1
+Elkhorn,10084,1
+Elroy,1442,0
+Evansville,5012,0
+Fennimore,2497,0
+Fitchburg,25260,0
+Fond du Lac,43021,0
+Fort Atkinson,12368,0
+Fountain City,859,1
+Fox Lake,1519,0
+Franklin,35451,0
+Galesville,1481,0
+Gillett,1386,1
+Glendale,12872,0
+Glenwood City,1242,1
+Green Bay,104779,1
+Greenfield,36720,1
+Green Lake,960,1
+Greenwood,1026,1
+Hartford,14223,1
+Hayward,2318,1
+Hillsboro,1417,0
+Horicon,3655,1
+Hudson,12719,2
+Hurley,1547,2
+Independence,1336,2
+Janesville,63575,1
+Jefferson,7973,1
+Juneau,2814,1
+Kaukauna,15462,1
+Kenosha,99218,1
+Kewaunee,2952,1
+Kiel,3738,1
+La Crosse,51320,0
+Ladysmith,3414,0
+Lake Geneva,7651,0
+Lake Mills,5708,0
+Lancaster,3868,0
+Lodi,3050,1
+Loyal,1261,1
+Madison,243344,1
+Manawa,1371,1
+Manitowoc,33736,1
+Marinette,10968,2
+Marion,1260,2
+Markesan,1476,1
+Marshfield,19118,1
+Mauston,4423,1
+Mayville,5154,0
+Medford,4326,0
+Mellen,731,0
+Menasha,17353,0
+Menomonie,16264,0
+Mequon,23132,0
+Merrill,9661,0
+Middleton,17442,1
+Milton,5546,1
+Milwaukee,599164,1
+Mineral Point,2487,1
+Mondovi,2777,1
+Monona,7533,1
+Monroe,10827,1
+Montello,1495,1
+Montreal,807,1
+Mosinee,3988,1
+Muskego,24135,0
+Neenah,25501,1
+Neillsville,2463,1
+Nekoosa,2580,1
+New Berlin,39584,1
+New Holstein,3236,1
+New Lisbon,2554,1
+New London,7295,1
+New Richmond,8375,2
+Niagara,1624,2
+Oak Creek,34451,2
+Oconomowoc,15712,2
+Oconto,4513,2
+Oconto Falls,2891,3
+Omro,3517,1
+Onalaska,17736,1
+Oshkosh,66083,1
+Osseo,1701,1
+Owen,940,1
+Park Falls,2462,1
+Peshtigo,3502,0
+Pewaukee,13195,0
+Phillips,1478,0
+Pittsville,874,2
+Platteville,11224,2
+Plymouth,8445,2
+Port Washington,11250,1
+Portage,10324,1
+Prairie du Chien,5911,1
+Prescott,4258,1
+Princeton,1214,1
+Racine,78860,1
+Reedsburg,10014,1
+Rhinelander,7798,1
+Rice Lake,8438,1
+Richland Center,5184,1
+Ripon,7733,2
+River Falls,15000,3
+St. Croix Falls,2133,3
+St. Francis,9365,1
+Schofield,2169,1
+Seymour,3451,1
+Shawano,9305,1
+Sheboygan,49288,1
+Sheboygan Falls,7775,1
+Shell Lake,1347,1
+Shullsburg,1226,1
+South Milwaukee,21156,1
+Sparta,9522,1
+Spooner,2682,1
+Stanley,3608,2
+Stevens Point,26717,1
+Stoughton,12611,1
+Sturgeon Bay,9144,0
+Sun Prairie,29364,0
+Superior,27244,0
+Thorp,1621,0
+Tomah,9093,0
+Tomahawk,3397,0
+Two Rivers,11712,0
+Verona,10619,0
+Viroqua,5079,0
+Washburn,2117,1
+Waterloo,3333,1
+Watertown,23861,1
+Waukesha,70718,1
+Waupaca,6069,1
+Waupun,11340,0
+Wausau,39106,0
+Wautoma,2218,0
+Wauwatosa,46396,0
+West Allis,60411,0
+West Bend,31078,1
+Westby,2200,1
+Weyauwega,1900,1
+Whitehall,1558,1
+Whitewater,14390,2
+Wisconsin Dells,2678,2
+Wisconsin Rapids,18367,2

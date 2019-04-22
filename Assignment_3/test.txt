@@ -1,0 +1,8 @@
+Abbotsford,2310,2
+Adams,1967,1 
+Algoma,3167,2 
+Alma,781,0 
+Altoona,6706,0 
+Amery,2902,2 
+Antigo,8234,3
+Platteville,11224,3 
